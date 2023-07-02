@@ -90,6 +90,14 @@
         <attr name="wv_isShowCurtain" format="boolean" />
         <!--选中区域颜色-->
         <attr name="wv_curtainColor" format="color" />
+        <!--选中区域左上角矩形半径-->
+        <attr name="wv_leftTopRadius" format="float" />
+        <!--选中区域左下角矩形半径-->
+        <attr name="wv_leftBottomRadius" format="float" />
+        <!--选中区域右上角矩形半径-->
+        <attr name="wv_rightTopRadius" format="float" />
+        <!--选中区域右下角矩形半径-->
+        <attr name="wv_rightBottomRadius" format="float" />
         <!--选中区域/分割线上下偏移，通过移动分割线上下限制的位置来实现扩大/缩小显示区域-->
         <attr name="wv_dividerOffsetY" format="dimension" />
     </declare-styleable>

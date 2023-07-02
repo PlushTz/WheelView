@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.eetrust.wheelview.WheelView
+                android:id="@+id/wheel_view_date"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="visible"
+                app:wv_curtainColor="@color/gray"
+                app:wv_curved="true"
+                app:wv_curvedArcDirection="center"
+                app:wv_isShowCurtain="true"
+                app:wv_leftBottomRadius="10"
+                app:wv_leftTopRadius="10"
+                app:wv_textAlign="center"
+                app:wv_lineSpacing="40dp"
+                app:wv_rightBottomRadius="0"
+                app:wv_rightTopRadius="0"
+                app:wv_textSize="16sp"
+                app:wv_visibleItems="4" />
+
+            <com.eetrust.wheelview.WheelView
+                android:id="@+id/wheel_view_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wheel_view_minute"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:wv_curtainColor="@color/gray"
+                app:wv_curved="true"
+                app:wv_curvedArcDirection="center"
+                app:wv_isShowCurtain="true"
+                app:wv_leftBottomRadius="0"
+                app:wv_leftTopRadius="0"
+                app:wv_lineSpacing="40dp"
+                app:wv_rightBottomRadius="0"
+                app:wv_rightText="时"
+                app:wv_rightTextColor="@color/black"
+                app:wv_rightTextGravity="center"
+                app:wv_rightTextSize="16sp"
+                app:wv_rightTopRadius="0"
+                app:wv_textSize="16sp"
+                app:wv_visibleItems="4" />
+
+            <com.eetrust.wheelview.WheelView
+                android:id="@+id/wheel_view_minute"
+                android:layout_width="80dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="40dp"
+                app:wv_textAlign="center"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/wheel_view_hour"
+                app:layout_constraintTop_toTopOf="parent"
+                app:wv_curtainColor="@color/gray"
+                app:wv_curved="true"
+                app:wv_curvedArcDirection="center"
+                app:wv_isShowCurtain="true"
+                app:wv_leftBottomRadius="0"
+                app:wv_leftTopRadius="0"
+                app:wv_lineSpacing="40dp"
+                app:wv_rightBottomRadius="10"
+                app:wv_rightText="分"
+                app:wv_rightTextColor="@color/black"
+                app:wv_rightTextGravity="center"
+                app:wv_rightTextSize="16sp"
+                app:wv_rightTopRadius="10"
+                app:wv_textSize="16sp"
+                app:wv_visibleItems="4" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
